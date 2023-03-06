@@ -17,17 +17,22 @@
 
       var profile = httpContext.Request.Headers["Profile"];
 
-      if (profile == "admin")
+      //if (profile == "admin")
+      //{
+      //  await _next(httpContext); // calling next middleware
+      //}
+      //else if (profile == "professor")
+      //{
+      //  // TODO
+      //}
+      //else if (profile == "leitor")
+      //{
+      //  // TODO
+      //}
+
+      if (profile == "Ada")
       {
-        await _next(httpContext); // calling next middleware
-      }
-      else if (profile == "professor")
-      {
-        // TODO
-      }
-      else if (profile == "leitor")
-      {
-        // TODO
+        await _next(httpContext);
       }
       else
       {
